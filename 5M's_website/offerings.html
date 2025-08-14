@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="offerings-styles.css">
+    <title>Offerings</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: rgba(240, 180, 180, 0.519);
+            font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            height: 15vh;
+            background-color: #4059A0;
+
+        }
+
+        .headersection {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0 100px;
+            align-items: center;
+        }
+
+        .logo_container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 230px;
+            height: 110px;
+            margin-right: 10px;
+        }
+
+        .nav_container1 {
+            display: flex;
+            flex-basis: 65%;
+            height: 100%;
+            flex-direction: row;
+            align-items: center;
+            /* border: 1px solid blue; */
+            list-style: none;
+            font-size: 18px;
+            
+        }
+
+        .nav_container1 nav{
+            display: flex;
+            width: 100%;
+            /* border: 1px solid green; */
+        }
+
+        .nav_container1 ul {
+            display: flex;
+            flex-direction: row;
+           gap: 50px;
+            justify-content: space-between;
+            /* border: 1px solid blue; */
+            
+        }
+
+        .nav_container1 li {
+            display: flex; 
+            width: 100%;          
+            /* border: 1px solid red; */
+
+        }
+
+        .nav_container2 {
+            display: flex;
+            flex-basis: 20%;
+            list-style: none;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+            font-size: 18px;
+            
+        }
+
+        .nav_container2 li {
+            display: flex;
+            
+        }
+
+        ul li a:hover {
+            border-radius: 3px;
+            background: #F8C4D3;
+            color: #FFFFFE;
+
+        }
+
+        nav a {
+            display: flex;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px;
+        }
+
+        .sec1{
+            width: 100%;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+                        h2{
+                            font-size: 36px;
+                            margin:0;
+                            color: #B4203A;
+                        }
+
+
+                        .section {
+                            margin: 40px 0;
+                            padding: 0;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .slider {
+                            position: relative;
+                            width: 800px;
+                            overflow: hidden;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .aphoto {
+                            width: 500%;
+                            height: 565px;
+                            display: flex;
+
+                        }
+
+                        .aphoto input {
+                            display: none;
+                        }
+
+                        .aphoto img {
+                            width: 800px;
+                            height: 550px;
+                            transition: all 0.40s ease;
+                        }
+                        
+                        .dots {
+                            margin: 5px;
+                            justify-content: center;
+                            display: flex;
+                        }
+                        
+                        .dots label{
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 20px;
+                            border: 2px solid #000;
+                            transition: all 1s ease;
+                            cursor: pointer;
+                            margin: 5px;
+                            padding: 5px;
+                        }
+        
+                        .dots label:hover{
+                            background-color: #ffffff;
+                        }
+        
+                        #image1:checked ~.m1{
+                            margin-left: 0;
+                        }
+                        #image2:checked ~.m2{
+                            margin-left: -20%;
+                        }
+                        #image3:checked ~.m3{
+                            margin-left: -40%;
+                        }
+                        #image4:checked ~.m4{
+                            margin-left: -60%;
+                        }
+                        #image5:checked ~.m5{
+                            margin-left: -80%;
+                        }
+                        #image6:checked ~.m6{
+                            margin-left: -100%;
+                        }
+
+
+                        .section {
+                            margin: 40px 0;
+                            padding: 0;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .slider {
+                            position: relative;
+                            width: 800px;
+                            overflow: hidden;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .bphoto {
+                            width: 500%;
+                            height: 565px;
+                            display: flex;
+
+                        }
+
+                        .bphoto input {
+                            display: none;
+                        }
+
+                        .bphoto img {
+                            width: 800px;
+                            height: 550px;
+                            transition: all 0.40s ease;
+                        }
+                        
+                        .dots {
+                            margin: 5px;
+                            justify-content: center;
+                            display: flex;
+                        }
+                        
+                        .dots label{
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 20px;
+                            border: 2px solid #000;
+                            transition: all 1s ease;
+                            cursor: pointer;
+                            margin: 5px;
+                            padding: 5px;
+                        }
+        
+                        .dots label:hover{
+                            background-color: #ffffff;
+                        }
+        
+                        #imag1:checked ~.m1{
+                            margin-left: 0;
+                        }
+                        #imag2:checked ~.m2{
+                            margin-left: -20%;
+                        }
+                        #imag3:checked ~.m3{
+                            margin-left: -40%;
+                        }
+
+
+
+
+                        .section {
+                            margin: 40px 0;
+                            padding: 0;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .slider {
+                            position: relative;
+                            width: 800px;
+                            overflow: hidden;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .cphoto {
+                            width: 500%;
+                            height: 565px;
+                            display: flex;
+
+                        }
+
+                        .cphoto input {
+                            display: none;
+                        }
+
+                        .cphoto img {
+                            width: 800px;
+                            height: 550px;
+                            transition: all 0.40s ease;
+                        }
+                        
+                        .dots {
+                            margin: 5px;
+                            justify-content: center;
+                            display: flex;
+                        }
+                        
+                        .dots label{
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 20px;
+                            border: 2px solid #000;
+                            transition: all 1s ease;
+                            cursor: pointer;
+                            margin: 5px;
+                            padding: 5px;
+                        }
+        
+                        .dots label:hover{
+                            background-color: #ffffff;
+                        }
+        
+                        #img1:checked ~.m1{
+                            margin-left: 0;
+                        }
+                        #img2:checked ~.m2{
+                            margin-left: -20%;
+                        }
+
+
+
+                        .section {
+                            margin: 40px 0;
+                            padding: 0;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .slider {
+                            position: relative;
+                            width: 800px;
+                            overflow: hidden;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .dphoto {
+                            width: 500%;
+                            height: 565px;
+                            display: flex;
+
+                        }
+
+                        .dphoto input {
+                            display: none;
+                        }
+
+                        .dphoto img {
+                            width: 800px;
+                            height: 550px;
+                            transition: all 0.40s ease;
+                        }
+                        
+                        .dots {
+                            margin: 5px;
+                            justify-content: center;
+                            display: flex;
+                        }
+                        
+                        .dots label{
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 20px;
+                            border: 2px solid #000000;
+                            transition: all 1s ease;
+                            cursor: pointer;
+                            margin: 5px;
+                            padding: 5px;
+                        }
+        
+                        .dots label:hover{
+                            background-color: #000000;
+                        }
+        
+                        #imgs1:checked ~.m1{
+                            margin-left: 0;
+                        }
+                        #imgs2:checked ~.m2{
+                            margin-left: -20%;
+                        }
+                        #imgs3:checked ~.m3{
+                            margin-left: -40%;
+                        }
+                        #imgs4:checked ~.m4{
+                            margin-left: -60%;
+                        }
+
+
+
+                        .section {
+                            margin: 40px 0;
+                            padding: 0;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .slider {
+                            position: relative;
+                            width: 800px;
+                            overflow: hidden;
+                            margin-bottom: 50px;
+                        }
+                        
+                        .ephoto {
+                            width: 500%;
+                            height: 565px;
+                            display: flex;
+
+                        }
+
+                        .ephoto input {
+                            display: none;
+                        }
+
+                        .ephoto img {
+                            width: 800px;
+                            height: 550px;
+                            transition: all 0.40s ease;
+                        }
+                        
+                        .dots {
+                            margin: 5px;
+                            justify-content: center;
+                            display: flex;
+                        }
+                        
+                        .dots label{
+                            height: 10px;
+                            width: 10px;
+                            border-radius: 20px;
+                            border: 2px solid #000000;
+                            transition: all 1s ease;
+                            cursor: pointer;
+                            margin: 5px;
+                            padding: 5px;
+                        }
+        
+                        .dots label:hover{
+                            background-color: #000000;
+                        }
+        
+                        #imgs1:checked ~.m1{
+                            margin-left: 0;
+                        }
+
+                        
+        .Contacts{
+            background-color: #F8C4D3;
+            color: #ffffff;
+            padding: 20px 100px;
+        }
+
+        .contacts-title{
+            font-size: 36px;
+            color: #B4203A;
+        }
+
+        .inquiries-title{
+            font-size: 24px;
+            color: #B4203A;
+        }
+
+        .inquiries{
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .information{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 30px;
+          
+        }
+
+        .fb{
+            display: flex;
+            flex-direction: row;   
+        }
+
+        .mobile{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .email{
+            display: flex;
+            flex-direction: row;  
+        }
+        .address{
+            display: flex;
+            flex-direction: row;  
+        }
+
+        .icon{
+
+            align-self: flex-start;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .label{
+            color: #B4203A;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .details{
+            font-size: 16px;
+        }
+
+        hr{
+            border: 1px solid white;
+        }
+
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        footer{
+            width: 100%;
+            height: 120px;
+            background-color: #4059A0;;
+        }
+
+        .copyright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <section class="headersection">
+
+            <div class="logo_container">
+                <img src="logo.png" class="logo" alt="Micron Audio Sounds and Lights x 5M's Photobooth Logo">
+            </div>
+
+            <div class="nav_container1">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="offerings.html">OFFERINGS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="nav_container2">
+                <nav>
+                    <ul>
+                        <li class="contact"><a href="#contacts">CONTACTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+
+    <main class="container">
+
+        <section class="sec1" id="offerings">
+
+            <div class="offerings">
+                <div class="content1">
+                <h2 class="first">5M's Photobooth Services</h2>
+
+                <div class="slider">
+                    <div class="aphoto">
+                        <input type="radio" name="slide" id="image1">
+                        <input type="radio" name="slide" id="image2">
+                        <input type="radio" name="slide" id="image3">
+                        <input type="radio" name="slide" id="image4">
+                        <input type="radio" name="slide" id="image5">
+                        <input type="radio" name="slide" id="image6">
+
+                        <img src="photobooth1.jpg" class="m1" alt="image1">
+                        <img src="photobooth2.jpg" class="m2" alt="image2">
+                        <img src="photobooth3.jpg" class="m3" alt="image3">
+                        <img src="photobooth4.jpg" class="m4" alt="image4">
+                        <img src="photobooth5.jpg" class="m5" alt="image5">
+                        <img src="photobooth6.jpg" class="m6" alt="image6">
+                    </div>
+
+                    <div class="dots">
+                        <label for="image1"></label>
+                        <label for="image2"></label>
+                        <label for="image3"></label>
+                        <label for="image4"></label>
+                        <label for="image5"></label>
+                        <label for="image6"></label>
+                    </div>
+                </div>
+
+                <div class="content1">
+                    <h2 class="first">Micron Audio Sounds and Lights Services</h2>
+                </div>
+
+                <div class="slider">
+                    <div class="bphoto">
+                        <input type="radio" name="slide" id="imag1">
+                        <input type="radio" name="slide" id="imag2">
+                        <input type="radio" name="slide" id="imag3">
+
+                        <img src="lights1.jpg" class="m1" alt="imag1">
+                        <img src="lights2.jpg" class="m2" alt="imag2">
+                        <img src="lights3.jpg" class="m3" alt="imag3">
+                    </div>
+
+                    <div class="dots">
+                        <label for="imag1"></label>
+                        <label for="imag2"></label>
+                        <label for="imag3"></label>
+
+                    </div>
+                </div>
+
+
+                <div class="content1">
+                    <h2 class="first">Photobooth and Audio Sounds <br>and Lights Services</h2>
+                </div>
+
+                <div class="slider">
+                    <div class="cphoto">
+                        <input type="radio" name="slide" id="img1">
+                        <input type="radio" name="slide" id="img2">
+
+                        <img src="both1.jpg" class="m1" alt="img1">
+                        <img src="both2.jpg" class="m2" alt="img2">
+                    </div>
+
+                    <div class="dots">
+                        <label for="img1"></label>
+                        <label for="img2"></label>
+
+                    </div>
+                </div>
+
+
+
+                <div class="content1">
+                    <h2 class="first">Photobooth, Audio Sounds and Lights, <br> and OTD Coordinators</h2>
+                </div>
+
+                <div class="slider">
+                    <div class="dphoto">
+                        <input type="radio" name="slide" id="imgs1">
+                        <input type="radio" name="slide" id="imgs2">
+                        <input type="radio" name="slide" id="imgs3">
+
+                        <img src="bothA.jpg" class="m1" alt="imgs1">
+                        <img src="bothB.jpg" class="m2" alt="imgs2">
+                        <img src="bothC.jpg" class="m3" alt="imgs3">
+                    </div>
+
+                    <div class="dots">
+                        <label for="imgs1"></label>
+                        <label for="imgs2"></label>
+                        <label for="imgs3"></label>
+
+                    </div>
+                </div>
+
+                <div class="content1">
+                    <h2 class="first">All in</h2>
+                </div>
+
+                    <div class="slider">
+                        <div class="ephoto">
+                            
+                            <input type="radio" name="slide" id="imgs1">   
+
+                            <img src="all-in.jpg" class="m1" alt="imgs1">   
+                        </div>
+    
+                        <div class="dots">
+                            <label for="imgs1"></label>
+    
+                        </div>
+
+                    </div>
+
+
+        </section>
+        <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById?('radio' + counter).checked=true:
+            counter++;
+            if(counter > 6){
+                counter -1;
+            }
+        },5000);
+        </script>
+
+
+
+
+    </main>
+
+
+
+<section class="Contacts" id="contacts">
+                        <h1 class="contacts-title">CONTACTS</h1>
+                        <div class="inquiries">
+                            <h1 class="inquiries-title">For Inquiries:</h1>
+                            <p>For inquiries, detailed quotes, or to discuss how we can amplify the atmosphere of your upcoming event, please don't hesitate to reach out through the provided contact details below. Let's illuminate your events and capture memories that last a lifetime!</p>
+                        </div>
+
+                        <div class="information">
+
+                           
+                                <div class="fb">
+                                    <div class="icon">
+                                        <img src="facebook-logo.png" alt="Icon" width="30" height="30"> 
+                                    </div>
+
+                                    <div class="details">
+                                        <h1 class="label">Facebook</h1>
+                                        <p><a href="https://www.facebook.com/MicronAudio" target="_blank">5M's Photobooth</a></p>
+                                        <p><a href="https://www.facebook.com/5Msphotobooth" target="_blank">Micron Audio Sounds and Lights</a></p>
+                                    </div>
+                                    
+                                </div>
+                                <hr>
+                                <div class="mobile">
+                                    <div class="icon">
+                                        <img src="smartphone.png" alt="Icon" width="30" height="30">
+                                    </div>
+
+                                    <div class="details">
+                                        <h1 class="label">Mobile No.</h1>
+                                        <p>+63 968 2689 532</p>
+                                        <p>+63 917 8752 706</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="email">
+                                    <div class="icon">
+                                        <img src="mail.png" alt="Icon" width="30" height="30">
+                                    </div>
+                                    <div class="details">
+                                        <h1 class="label">Email</h1>
+                                        <p><a href="https://mail.google.com/mail/u/1/#inbox?compose=jrjtXDxrBcDmCTbbQXVDzbrCrpPrPBjnxGFTTJmlFdpkhXdXxwpJqGVVjbdgmLzftRThrwQg" target="_blank">5msphotobooth2018@gmail.com</a></p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="address">
+                                    <div class="icon">
+                                        <img src="pin.png" alt="Icon" width="30" height="30">
+                                    </div>
+
+                                    <div class="details">
+                                        <h1 class="label">Address</h1>
+                                        <p>Santa Rosa City, Laguna, Philippines</p>
+                                    </div>
+                                    
+                                </div>
+                            
+                        </div>
+
+                    </section>
+                
+           
+       
+ 
+
+
+
+    <footer>
+        <div class="copyright">
+            <p class="copyright-text">&copy; 2024 5M's Photobooth & Micron Audio Sounds and Lights. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

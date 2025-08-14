@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home-styles.css">
+    <title>Home</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgba(240, 180, 180, 0.519);
+            font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            height: 15vh;
+            background-color: #4059A0;
+
+        }
+
+        .headersection {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0 100px;
+            align-items: center;
+        }
+
+        .logo_container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 230px;
+            height: 110px;
+            margin-right: 10px;
+        }
+
+        .nav_container1 {
+            display: flex;
+            flex-basis: 65%;
+            height: 100%;
+            flex-direction: row;
+            align-items: center;
+            /* border: 1px solid blue; */
+            list-style: none;
+            font-size: 18px;
+            
+        }
+
+        .nav_container1 nav{
+            display: flex;
+            width: 100%;
+            /* border: 1px solid green; */
+        }
+
+        .nav_container1 ul {
+            display: flex;
+            flex-direction: row;
+           gap: 10px;
+            justify-content: space-between;
+            /* border: 1px solid blue; */
+            
+        }
+
+        .nav_container1 li {
+            display: flex; 
+            width: 100%;        
+            /* border: 1px solid red; */
+
+        }
+
+        .nav_container2 {
+            display: flex;
+            flex-basis: 20%;
+            list-style: none;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+            font-size: 18px;
+            
+        }
+
+        .nav_container2 li {
+            display: flex;
+
+        }
+
+        ul li a:hover {
+            border-radius: 3px;
+            background: #F8C4D3;
+            color: #FFFFFE;
+
+        }
+
+        nav a {
+            display: flex;
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 25px;  
+        }
+
+        .sec1{
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .image-container {
+            margin: 0;
+            padding: 0;
+        }
+
+        .landscape-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .events {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #B4203A;
+            margin-top: -10px;
+        }
+
+        .home-description{
+            flex-basis: 30%;
+            font-size: 24px;
+        }
+
+        .sample-events{
+            flex-shrink: 70%;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+
+        .Contacts{
+            background-color: #F8C4D3;
+            color: #ffffff;
+            padding: 20px 100px;
+        }
+
+        .contacts-title{
+            font-size: 36px;
+            color: #B4203A;
+        }
+
+        .inquiries-title{
+            font-size: 24px;
+            color: #B4203A;
+        }
+
+        .inquiries{
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .information{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 30px;
+          
+        }
+
+        .fb{
+            display: flex;
+            flex-direction: row;   
+        }
+
+        .mobile{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .email{
+            display: flex;
+            flex-direction: row;  
+        }
+        .address{
+            display: flex;
+            flex-direction: row;  
+        }
+
+        .icon{
+            align-self: flex-start;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .label{
+            color: #B4203A;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .details{
+            font-size: 16px;
+        }
+
+        hr{
+            border: 1px solid white;
+        }
+
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        footer{
+            width: 100%;
+            height: 120px;
+            background-color: #4059A0;;
+        }
+
+        .copyright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <section class="headersection">
+
+            <div class="logo_container">
+                <img src="logo.png" class="logo" alt="Micron Audio Sounds and Lights x 5M's Photobooth Logo">
+            </div>
+
+            <div class="nav_container1">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="offerings.html">OFFERINGS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="nav_container2">
+                <nav>
+                    <ul>
+                        <li class="contact"><a href="#contacts">CONTACTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+
+    <main class="container">
+
+        <section class="sec1" id="home">
+                <div class="image-container">
+                    <img src="home-image.jpg" alt="Landscape Image" class="landscape-image">
+                </div>
+
+                <div class="events">
+
+                    <div class="home-description">
+                        <p>Looking for basic to upgraded photobooth, sounds and lights for all occasions like...</p>
+                    </div>
+
+                    <div class="sample-events">
+                        <h1>Company Event</h1>
+                        <h1>Birthday Party</h1>
+                        <h1>Wedding Reception</h1>
+                        <h1>Prom Night</h1>
+                    </div>
+                </div>
+   
+        </section>
+
+    </main>
+
+
+
+
+
+    <section class="Contacts" id="contacts">
+        <h1 class="contacts-title">CONTACTS</h1>
+        <div class="inquiries">
+            <h1 class="inquiries-title">For Inquiries:</h1>
+            <p>For inquiries, detailed quotes, or to discuss how we can amplify the atmosphere of your upcoming event, please don't hesitate to reach out through the provided contact details below. Let's illuminate your events and capture memories that last a lifetime!</p>
+        </div>
+
+        <div class="information">
+
+           
+                <div class="fb">
+                    <div class="icon">
+                        <img src="facebook-logo.png" alt="Icon" width="30" height="30"> 
+                    </div>
+
+                    <div class="details">
+                        <h1 class="label">Facebook</h1>
+                        <p><a href="https://www.facebook.com/MicronAudio" target="_blank">5M's Photobooth</a></p>
+                        <p><a href="https://www.facebook.com/5Msphotobooth" target="_blank">Micron Audio Sounds and Lights</a></p>
+                    </div>
+                    
+                </div>
+                <hr>
+                <div class="mobile">
+                    <div class="icon">
+                        <img src="smartphone.png" alt="Icon" width="30" height="30">
+                    </div>
+
+                    <div class="details">
+                        <h1 class="label">Mobile No.</h1>
+                        <p>+63 968 2689 532</p>
+                        <p>+63 917 8752 706</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="email">
+                    <div class="icon">
+                        <img src="mail.png" alt="Icon" width="30" height="30">
+                    </div>
+                    <div class="details">
+                        <h1 class="label">Email</h1>
+                        <p><a href="https://mail.google.com/mail/u/1/#inbox?compose=jrjtXDxrBcDmCTbbQXVDzbrCrpPrPBjnxGFTTJmlFdpkhXdXxwpJqGVVjbdgmLzftRThrwQg" target="_blank">5msphotobooth2018@gmail.com</a></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="address">
+                    <div class="icon">
+                        <img src="pin.png" alt="Icon" width="30" height="30">
+                    </div>
+
+                    <div class="details">
+                        <h1 class="label">Address</h1>
+                        <p>Santa Rosa City, Laguna, Philippines</p>
+                    </div>
+                    
+                </div>
+            
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+<footer>
+<div class="copyright">
+<p class="copyright-text">&copy; 2024 5M's Photobooth & Micron Audio Sounds and Lights. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+
+</html>

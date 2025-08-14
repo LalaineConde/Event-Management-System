@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="dashboard.scss">
+    <title><?php echo $page_title; ?></title>
+    
+
+<style type="text/css">
+    
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+
+body{
+
+        background: rgba(240, 180, 180, 0.519);
+        background-attachment: fixed;
+}
+
+header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 20px 100px;
+    background-color: #4059A0;
+    /* border-bottom: 3px solid #FFFFFF; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 230px;
+    height: 110px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px; 
+    color: #ffffff; 
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 25px;
+    /* color: #ffffff; */
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+ul li a.clicked {
+    border-radius: 3px;
+    background: #F8C4D3;
+    color: #FFFFFE;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    /* background: #000067; */
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    border-radius: 3px;
+    background: #F8C4D3;
+    color: #FFFFFE;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+a{
+        color: #FFFFFF;
+        text-decoration: none;
+
+        }
+
+
+</style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logo_container">
+        <img src="logo.png" class="logo" alt="Micron Audio Sounds and Lights x 5M's Photobooth Logo"> 
+        <!-- <h1>Website Name</h1> -->
+    </div>
+
+    <div class="menuToggle" > </div>        
+
+<nav>
+    <ul>
+        
+        
+        <li><a href="pending.php">OVERVIEW</a></li>
+        <li><a href="client-management.php">CLIENT MANAGEMENT</a></li>
+        <li><a href="create-event.php">CREATE EVENT</a></li>
+        <li><a href="event-calendar.php">EVENT CALENDAR</a></li>
+        <li><a href="client-comms.php">CLIENT COMMS</a></li>
+        
+    </ul>
+</nav>
+
+    </header>
+
+    
+</body>
+</html>
